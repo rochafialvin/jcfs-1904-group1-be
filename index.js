@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.status(200).send("API 1-Pharmacy 🚀");
+  res.status(200).send("API 1904-1-Pharmacy 🚀");
 });
 app.use("/products", productsRouter);
 
