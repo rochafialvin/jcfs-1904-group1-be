@@ -22,6 +22,8 @@ jobs:
           port: 22
           script: |
             cd ~/app/jcfs-1904-group1-be
+            rm -rf .env
             git pull origin master
+            cp .env-template .env
             npm install
             pm2 restart api-1-pharmacy
